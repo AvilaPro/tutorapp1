@@ -11,7 +11,7 @@ import { DirEstrucComponent } from "./dir-estruc/dir-estruc.component";
 import { NgModule } from '@angular/core';
 
 const appRoutes: Routes = [
-  { path: '', component: AppComponent },
+
   { path: 'ejemplo', component: EjemploComponent },
   { path: 'ex2', component: Ex2Component },
   { path: 'twb', component: TwbindComponent },
