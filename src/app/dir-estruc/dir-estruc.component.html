@@ -1,0 +1,52 @@
+<br><br>
+<ng-container *ngIf="!isLogged; else logueado" >
+  <h3>Aun no has iniciado sesion</h3>
+  <button (click)="isLogged = true">Iniciar Sesion</button>
+  <button>Registrarse</button>
+</ng-container>
+<br><br>
+<ng-template #logueado>
+  <h3>Has iniciado sesion</h3>
+  <button>Ir a admin</button>
+  <button>Ir a mi perfil</button>
+  <button (click)="isLogged = false">Cerrar Sesion</button>
+</ng-template>
+
+
+
+
+
+
+
+
+
+
+<!-- <h2>"Todo lo que se puede</h2>
+<ng-template>
+  <h2>imaginar</h2>
+</ng-template>
+<h2>es real (Pablo Picasso)"</h2> -->
+
+<!-- <div>
+  Selecciona un Estudiante
+  (<label><input type="checkbox" checked (change)="verReprobado = !verReprobado">ver Reprobados</label>)
+</div>
+<select [(ngModel)]="estudiante">
+  <ng-container *ngFor="let e of estudiantes">
+    <ng-container *ngIf="verReprobado || e.estatus !== 'Reprobado'">
+      <option [ngValue]="e">{{e.nombre}} ({{e.estatus}})</option>
+    </ng-container>
+  </ng-container>
+</select> -->
+
+<!-- <div>
+  Selecciona un Estudiante
+  (<label><input type="checkbox" checked (change)="verReprobado = !verReprobado">ver Reprobados</label>)
+</div>
+<select [(ngModel)]="estudiante">
+  <span *ngFor="let e of estudiantes">
+    <span *ngIf="verReprobado || e.estatus !== 'Reprobado'">
+      <option [ngValue]="e">{{e.nombre}} ({{e.estatus}})</option>
+    </span>
+  </span>
+</select> -->

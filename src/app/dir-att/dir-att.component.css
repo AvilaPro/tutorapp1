@@ -1,0 +1,22 @@
+.cuadrado{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.segundo{
+  background-color: blue;
+}
+.cuadrado-grande{
+  height: 200px;
+  width: 200px;
+}
+.rojo{
+  background-color: red;
+}
+.verde{
+  background-color: green;
+}
+.purpura{
+  background-color: purple;
+}
+

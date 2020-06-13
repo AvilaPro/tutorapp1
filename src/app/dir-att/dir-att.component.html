@@ -1,0 +1,24 @@
+<div class="contenedor">
+  <h1>Directivas de Atributos</h1>
+  <input type="checkbox" (change)="siCheck = !siCheck"> Cambiar estilos de clase
+
+  <div class="cuadrado altura" [ngClass]="{segundo: siCheck}">
+  </div>
+  <br><br>
+  <div class="cuadrado altura" [ngClass]="{'segundo cuadrado-grande': siCheck}"></div>
+</div>
+<div>
+  <h2>Control de propiedades con variables ngClass</h2>
+  <input type="checkbox" name="v" id="" (change)="aVerde = !aVerde; setCambioClases()">Fondo Verde
+  <input type="checkbox" name="r" id="" (change)="aRojo = !aRojo; setCambioClases()">Fondo Rojo
+  <input type="checkbox" name="p" id="" (change)="aPurpura = !aPurpura; setCambioClases()">Fondo Purpura
+
+  <div [ngClass]="cambioClases"></div>
+</div>
+<div>
+  <h2>Control de estilos con ngStyle</h2>
+  <input type="checkbox" name="c" id="" (change)="cambio = !cambio">Cambiar tamaño de letras
+  <div [style.font-size]="cambio ? 'x-large' : 'smaller'">
+    Este div cambia el tamaño de las letras.
+  </div>
+</div>

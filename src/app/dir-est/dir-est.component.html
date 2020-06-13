@@ -1,0 +1,66 @@
+<p *ngIf="true">
+  Expresion es true y ngIf es true.
+  Este elemento esta en el DOM.
+</p>
+<p *ngIf="false">
+  Expresion es false y ngIf es false.
+  Este elemento no esta en el DOM.
+</p>
+<!-- Caso con el display (veremos en el detalle con el
+inspeccionador de elementos del navegador) -->
+<p [style.display]="'block'">
+  Expresion configurada con  display : "block".
+  Este elemento es visible.
+</p>
+<p [style.display]="'none'">
+  Expression configurada display : "none".
+  Este elemento esta oculto pero permanece en el DOM.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>Directiva Estructural ngIf</h1>
+<div *ngIf="!estaLogueado">
+  <button (click)="estaLogueado = true">Iniciar Sesion</button>
+</div><br>
+<h3>Nivel: {{ nivel }} </h3><br>
+<button (click)="nivel=nivel+1">Subir Nivel</button><br>
+<button (click)="nivel=nivel-1">Bajar Nivel</button><br>
+<div *ngIf="nivel > 4">
+  <h5>Aparezco cuando nivel es mayor a 4</h5>
+</div><br>
+<div *ngIf="estaLogueado" >
+  <button (click)="estaLogueado = false">Cerrar Sesion</button>
+</div><br><br>
+
+<h1>Directiva ngFor</h1>
+<div>
+  <ul>
+    <li *ngFor="let item of materias">
+      {{item}}
+    </li>
+  </ul>
+</div><br><br>
+
+<h1>Directiva ngSwitch</h1>
+<div [ngSwitch]="nivel">
+  <div *ngSwitchCase="1"><p>Vamos en nivel 1</p></div>
+  <div *ngSwitchCase="2"><p>Vamos en nivel 2</p></div>
+  <div *ngSwitchCase="3"><p>Vamos en nivel 3</p></div>
+  <div *ngSwitchCase="4"><p>Vamos en nivel 4</p></div>
+  <div *ngSwitchCase="5"><p>Vamos en nivel 5</p></div>
+  <div *ngSwitchCase="6"><p>Vamos en nivel 6</p></div>
+  <div *ngSwitchDefault><p>No esta en rango [1, 6]</p></div>
+</div> -->
+
